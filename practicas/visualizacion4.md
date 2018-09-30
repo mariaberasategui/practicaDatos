@@ -1,17 +1,14 @@
 # Ejemplo Maria Visualización
-Se van a leer las coordenadas de una lista de poblaciones y se van a graficar en un gráfico de dispersión o XY (Scatter Chart).
 
-Los datos provienen de la hoja [lista de municipios](https://www.businessintelligence.info/assets/listado-longitud-latitud-municipios-espana.html)
+En este trabajo, se van a leer los porcentajes de la tasa de actividad de la población de 16 años y más, en Euskadi y se van a graficar en un gráfico Combo Chart.
 
-Se van a obtener con WebScraping mediante la función leerTasas() del [fichero JavaScript](../ESTADISTICA/leertasas.js)
-Para ello abrir la consola (F12) de la lista de municipios y pegar la definición de la función. Ejecutar a continuación la función y copiar el resultado (la consola de Google Chrome, inserta un botón Copy al final del listado de datos).
+Los datos provienen de la hoja [Tasa de actividad de la población de 16 y más años de la C.A. de Euskadi, por trimestre, según edad y sexo (%.](http://www.eustat.eus/elementos/ele0011500/Tasa_de_actividad_de_la_poblacion_de_16_y_mas_anos_de_la_CA_de_Euskadi_por_trimestre_segun_edad_y_sexo__1/tbl0011534_c.html)
 
-Los datos obtenidos se guardan como JSON en un fichero de nombre [pobData.js](../geocoordenadas/pobData.js). Para poder usar directamente el array en una variable, añadir por delante de dicho array el texto: "obj="
+Se van a obtener con WebScraping mediante la función leerTASA() del [fichero JavaScript](../ESTADISTICA/leertasas.js)
+Para ello abrir la consola (F12) de la lista tasa de actividad y pegar la definición de la función. Ejecutar a continuación la función y copiar el resultado (la consola de Google Chrome, inserta un botón Copy al final del listado de datos).
 
-Para visualizar los datos, se utiliza la librería de [Google Chart](https://developers.google.com/chart/) y el tipo de gráfico [Scatter Chart](https://developers.google.com/chart/interactive/docs/gallery/scatterchart).
-El resultado es el que se muestra en la página [pobDataGoogle.html](../geocoordenadas/pobDataGoogle.html)
+Los datos obtenidos se guardan como JSON en un fichero de nombre [obj.js](../ESTADISTICA/obj.js). Para poder usar directamente el array en una variable, añadir por delante de dicho array el texto: "obj="
 
-Se puede realizar la representación de los mismos datos con otras librerías, por ejemplo:
-- [Poblaciones con GoolgleChart](../geocoordenadas/pobDataGoogle.html) - [Google Chart](https://developers.google.com/chart/interactive/docs/gallery/scatterchart)
-- [Poblaciones con Plotly.html](../geocoordenadas/pobDataPlotly.html) - [Plotly](https://plot.ly/javascript/line-and-scatter/#data-labels-hover)
-- [Poblaciones con CanvasJS](../geocoordenadas/pobDataCanvasJS.html) - [CanvasJS](https://canvasjs.com/html5-javascript-scatter-point-chart/)
+Para visualizar los datos, se utiliza la librería de [Google Chart](https://developers.google.com/chart/) y el tipo de gráfico [Combo Chart](https://developers.google.com/chart/interactive/docs/gallery/combochart).
+El resultado es el que se muestra en la página [visualizacion.html](../ESTADISTICA/visualizacion.html)
+
